@@ -1,104 +1,187 @@
-<!-- Project 1 -->
-<div class="project-card">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <h3>AI/ML Engineer (Agentic AI, ML Focused)</h3>
+  <title>Hitesh Lenin | AI/ML Engineer Portfolio</title>
 
-  <p class="project-role">
-    Hubbell Incorporated | Manufacturing Domain
-  </p>
+  <!-- CSS FILE -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
-  <p>
-    Production-grade AI/ML systems, RAG platforms,
-    model-serving APIs, vector databases,
-    MLOps pipelines, and enterprise GenAI workflows.
-  </p>
+<body>
 
-  <button onclick="openProject('project1')">
-    View Full Responsibilities
-  </button>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <h2 class="logo">Hitesh Lenin</h2>
 
-</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-<!-- Project 2 -->
-<div class="project-card">
+    <div class="hero">
+      <p class="tagline">AI/ML Engineer | GenAI | Python | MLOps | Cloud</p>
 
-  <h3>Python Full-stack Developer (ML Focused)</h3>
+      <h1>Building Production-Grade AI, ML & Data Engineering Solutions</h1>
 
-  <p class="project-role">
-    Allstate | Insurance Domain
-  </p>
+      <p class="hero-text">
+        Results-driven AI/ML Engineer with 11+ years of experience designing
+        enterprise AI/ML systems, GenAI applications, RAG pipelines,
+        cloud-native platforms, MLOps workflows, and scalable data engineering solutions.
+      </p>
 
-  <p>
-    Insurance analytics platform, fraud detection,
-    FastAPI APIs, Kafka pipelines,
-    real-time ML inference, and NLP automation.
-  </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="Hitesh_Lenin_Resume.pdf" target="_blank" class="btn secondary">Download Resume</a>
+      </div>
+    </div>
+  </header>
 
-  <button onclick="openProject('project2')">
-    View Full Responsibilities
-  </button>
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
 
-</div>
+    <p>
+      AI/ML Engineer and Python Developer with expertise in Machine Learning,
+      Generative AI, Retrieval-Augmented Generation, FastAPI backend systems,
+      cloud-native architectures, scalable ETL pipelines, and MLOps platforms
+      across manufacturing, insurance, finance, healthcare, and retail domains.
+    </p>
+  </section>
 
-<!-- Project 3 -->
-<div class="project-card">
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
 
-  <h3>Python Full-stack Developer (ML Focused)</h3>
+    <div class="skills-grid">
+      <div>Python</div>
+      <div>FastAPI</div>
+      <div>Machine Learning</div>
+      <div>Deep Learning</div>
+      <div>GenAI</div>
+      <div>RAG</div>
+      <div>LangChain</div>
+      <div>LangGraph</div>
+      <div>AWS</div>
+      <div>Azure</div>
+      <div>Databricks</div>
+      <div>PySpark</div>
+      <div>TensorFlow</div>
+      <div>PyTorch</div>
+      <div>Docker</div>
+      <div>Kubernetes</div>
+      <div>MLflow</div>
+      <div>Kafka</div>
+      <div>SQL</div>
+      <div>Power BI</div>
+    </div>
+  </section>
 
-  <p class="project-role">
-    Thomson Reuters | Finance Domain
-  </p>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Professional Experience & Projects</h2>
 
-  <p>
-    Financial ML systems, SageMaker deployments,
-    forecasting models, fraud analytics,
-    REST APIs, and MLOps pipelines.
-  </p>
+    <div class="projects-grid">
 
-  <button onclick="openProject('project3')">
-    View Full Responsibilities
-  </button>
+      <div class="project-card">
+        <h3>AI/ML Engineer</h3>
+        <p class="project-role">Hubbell Incorporated | Manufacturing Domain</p>
+        <p>
+          Agentic AI, GenAI, RAG, FastAPI model serving, vector databases,
+          MLOps pipelines, and production ML systems.
+        </p>
+        <button onclick="openProject('project1')">View Full Responsibilities</button>
+      </div>
 
-</div>
+      <div class="project-card">
+        <h3>Python Full-stack Developer</h3>
+        <p class="project-role">Allstate | Insurance Domain</p>
+        <p>
+          Insurance analytics platform, fraud detection, FastAPI APIs,
+          Kafka pipelines, real-time ML inference, and NLP automation.
+        </p>
+        <button onclick="openProject('project2')">View Full Responsibilities</button>
+      </div>
 
-<!-- Project 4 -->
-<div class="project-card">
+      <div class="project-card">
+        <h3>Python Full-stack Developer</h3>
+        <p class="project-role">Thomson Reuters | Finance Domain</p>
+        <p>
+          Financial ML systems, SageMaker deployments, forecasting models,
+          fraud analytics, REST APIs, and MLOps pipelines.
+        </p>
+        <button onclick="openProject('project3')">View Full Responsibilities</button>
+      </div>
 
-  <h3>Data Engineer</h3>
+      <div class="project-card">
+        <h3>Data Engineer</h3>
+        <p class="project-role">Cybage Software Pvt Limited | Healthcare Domain</p>
+        <p>
+          Healthcare ETL pipelines, Spark processing, AWS EMR workflows,
+          Redshift analytics, HL7/FHIR ingestion, and HIPAA-compliant systems.
+        </p>
+        <button onclick="openProject('project4')">View Full Responsibilities</button>
+      </div>
 
-  <p class="project-role">
-    Cybage Software Pvt Limited | Healthcare Domain
-  </p>
+      <div class="project-card">
+        <h3>Data Analyst</h3>
+        <p class="project-role">Indium Software | Retail Domain</p>
+        <p>
+          Power BI dashboards, Tableau reporting, KPI analytics,
+          automation workflows, customer analytics, and forecasting models.
+        </p>
+        <button onclick="openProject('project5')">View Full Responsibilities</button>
+      </div>
 
-  <p>
-    Healthcare ETL pipelines, Spark processing,
-    AWS EMR workflows, Redshift analytics,
-    HL7/FHIR ingestion, and HIPAA-compliant systems.
-  </p>
+    </div>
+  </section>
 
-  <button onclick="openProject('project4')">
-    View Full Responsibilities
-  </button>
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
 
-</div>
+    <p>Email: hiteshml2406@gmail.com</p>
 
-<!-- Project 5 -->
-<div class="project-card">
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/hiteshml/" target="_blank">
+        linkedin.com/in/hiteshml
+      </a>
+    </p>
 
-  <h3>Data Analyst</h3>
+    <p>
+      GitHub:
+      <a href="https://github.com/" target="_blank">
+        GitHub Profile
+      </a>
+    </p>
+  </section>
 
-  <p class="project-role">
-    Indium Software | Retail Domain
-  </p>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Hitesh Lenin | AI/ML Engineer Portfolio</p>
+  </footer>
 
-  <p>
-    Power BI dashboards, Tableau reporting,
-    KPI analytics, automation workflows,
-    customer analytics, and forecasting models.
-  </p>
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeProject()">&times;</span>
 
-  <button onclick="openProject('project5')">
-    View Full Responsibilities
-  </button>
+      <h2 id="modal-title"></h2>
+      <p id="modal-domain"></p>
+      <ul id="modal-list"></ul>
+      <p id="modal-tech"></p>
+    </div>
+  </div>
 
-</div>
+  <!-- JS FILE -->
+  <script src="./script.js"></script>
+
+</body>
+</html>
