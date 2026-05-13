@@ -6,15 +6,15 @@
 }
 
 body {
-  background: #0f172a;
+  background: #020617;
   color: #e5e7eb;
   line-height: 1.6;
 }
 
 header {
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  padding: 20px 8%;
+  padding: 25px 8%;
+  background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
 }
 
 nav {
@@ -33,49 +33,50 @@ nav ul {
   list-style: none;
 }
 
-nav ul li a {
+nav a {
   color: #e5e7eb;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav ul li a:hover {
+nav a:hover {
   color: #38bdf8;
 }
 
 .hero {
-  margin-top: 150px;
-  max-width: 850px;
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  max-width: 1000px;
+}
+
+.tagline {
+  color: #38bdf8;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .hero h1 {
-  font-size: 48px;
-  color: #ffffff;
-  margin-bottom: 20px;
+  font-size: 52px;
+  line-height: 1.1;
+  margin-bottom: 25px;
 }
 
 .hero p {
   font-size: 20px;
   color: #cbd5e1;
-  margin-bottom: 30px;
-}
-
-.buttons {
-  display: flex;
-  gap: 15px;
+  margin-bottom: 25px;
 }
 
 .btn {
+  display: inline-block;
   background: #38bdf8;
-  color: #0f172a;
-  padding: 12px 22px;
-  text-decoration: none;
+  color: #020617;
+  padding: 13px 22px;
   border-radius: 8px;
+  text-decoration: none;
   font-weight: bold;
-}
-
-.btn:hover {
-  background: #0ea5e9;
+  margin-right: 10px;
 }
 
 .btn.secondary {
@@ -89,13 +90,13 @@ section {
 }
 
 section h2 {
-  font-size: 34px;
   color: #38bdf8;
+  font-size: 34px;
   margin-bottom: 25px;
 }
 
 section p {
-  max-width: 900px;
+  max-width: 950px;
   color: #cbd5e1;
   font-size: 18px;
 }
@@ -106,35 +107,57 @@ section p {
   gap: 15px;
 }
 
-.skills-grid div {
+.skills-grid span {
   background: #1e293b;
-  padding: 15px;
-  text-align: center;
-  border-radius: 8px;
   border: 1px solid #334155;
+  padding: 14px;
+  border-radius: 8px;
+  text-align: center;
   font-weight: bold;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
 .project-card {
-  background: #1e293b;
-  padding: 25px;
-  margin-bottom: 20px;
-  border-radius: 12px;
+  background: #0f172a;
+  border: 1px solid #334155;
   border-left: 5px solid #38bdf8;
+  padding: 25px;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15);
 }
 
 .project-card h3 {
   color: #ffffff;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .project-card p {
-  margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 18px;
 }
 
-.project-card span {
-  color: #38bdf8;
+.project-card button {
+  background: #38bdf8;
+  color: #020617;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 7px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.project-card button:hover {
+  background: #0ea5e9;
 }
 
 #contact a {
@@ -143,15 +166,73 @@ section p {
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 22px;
   background: #020617;
+  border-top: 1px solid #1e293b;
   color: #94a3b8;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.9);
+  padding: 40px 15px;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background: #0f172a;
+  max-width: 900px;
+  margin: auto;
+  padding: 35px;
+  border-radius: 16px;
+  border: 1px solid #38bdf8;
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.25);
+}
+
+.close {
+  float: right;
+  font-size: 34px;
+  cursor: pointer;
+  color: #38bdf8;
+}
+
+#modal-title {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+#modal-domain {
+  color: #cbd5e1;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#modal-list {
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
+#modal-list li {
+  margin-bottom: 12px;
+  color: #e5e7eb;
+}
+
+#modal-tech {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 8px;
+  color: #38bdf8;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
   }
 
   nav ul {
@@ -159,15 +240,15 @@ footer {
     text-align: center;
   }
 
-  .hero {
-    margin-top: 80px;
-  }
-
   .hero h1 {
-    font-size: 34px;
+    font-size: 36px;
   }
 
-  .buttons {
-    flex-direction: column;
+  .hero p {
+    font-size: 17px;
+  }
+
+  .btn {
+    margin-bottom: 10px;
   }
 }
